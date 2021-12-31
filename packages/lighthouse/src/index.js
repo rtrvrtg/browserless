@@ -29,6 +29,7 @@ const getFlags = (
   disableStorageReset,
   logLevel,
   output,
+  hostname: new URL(browser.wsEndpoint()).hostname,
   port: new URL(browser.wsEndpoint()).port
 })
 
